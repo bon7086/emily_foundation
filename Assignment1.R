@@ -35,3 +35,20 @@ for(item in books){
   }
 } 
 print(long.titles)
+
+#part three
+numbers <- seq(from=1, to=201)
+print(numbers)
+squared.numbers <- numbers^2
+print(squared.numbers)
+
+squared.mean <- mean(squared.numbers)
+print(squared.mean)
+
+squares <- list()
+for(number in numbers){
+  if(sqrt(number)==round(sqrt(number))){
+    squares <- c(squares, number)
+  }
+}
+print(squares)
