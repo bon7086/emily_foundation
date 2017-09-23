@@ -1,5 +1,6 @@
 #install.packages("stringr")
 library("stringr")
+#part 1 of assignment 
 my.name <- "emily"
 my.age <- 24
 MakeIntroduction <- function(age, name) {
@@ -14,3 +15,23 @@ captial.intro <- str_to_title(my.intro)
 print(my.intro)
 intro.e.count <- str_count(my.intro, pattern= "e")
 print(intro.e.count)
+
+#part 2 of assignment 
+books <- c("born a crime", "bossy pants", "why is everyone hanging out without me", "yes, please",
+           "lean in", "hello vodka its me chelsea")
+top.three.books <- books[1:3]
+print(top.three.books)
+for(item in books){
+  book.reviews <-paste(item, "is a great read!")
+  print(book.reviews)
+}
+books.without.four <- c(books[1:3], books[5:6])
+print(books.without.four)
+long.titles <- list()
+
+for(item in books){
+  if(nchar(item) > 15){
+    long.titles <- c(long.titles, item)
+  }
+} 
+print(long.titles)
