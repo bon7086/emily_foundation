@@ -52,3 +52,5 @@ df[4,]
 my.colors <- c("blue", "red", "white", "gold", "gray")
 my.prefs <- c(3, 5, 1, 4, 2)
 my.clothes <- data.frame(c("shoes", "jeans", "shirt", "sweater", "watch"), my.prefs, my.colors)
+my.clothes
+#done with piaza assignment 
